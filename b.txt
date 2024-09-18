@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        nav a{
+            border-bottom: 2px solid transparent;
+            transition: all 1s;
+        }
+
+        nav a:hover{
+            border-bottom: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body class="font-roboto">
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+        <div class="flex items-center">
+            <img alt="RK Hospital Logo" class="h-10 w-10" height="50"
+                src="./logo hospital.png"
+                width="50" />
+            <span class="ml-3 text-xl font-bold">RK Hospital</span>
+        </div>
+        <nav class="space-x-6">
+            <a class="text-gray-600 hover:text-black" href="b.html">Home</a>
+            
+            <a class="text-gray-600 hover:text-black" href="contact.html">Contact Us</a>
+        </nav>
+        <div class="space-x-4">
+            <a href="signin.html" class="px-4 py-2 bg-gray-200 button text-gray-800 rounded">Sign In</a>
+            <a href="signup.html" class="px-4 py-2 bg-purple-500 text-white rounded button">Register</a>
+        </div>
+    </header>
+    <section class="flex flex-col md:flex-row items-center text-center py-20 bg-gray-50">
+        <div class="md:w-1/2 p-6">
+            <h1 class="text-4xl font-bold mb-4">We help people to get appointment in online</h1>
+            <p class="text-gray-600 mb-8">Lorem Media is a full-service social media agency. We offer businesses
+                innovative solutions that deliver the right type of audience to you in the most effective strategies
+                possible. We strive to develop a community around your business, polishing your branding, and improving
+                your public relations.</p>
+        </div>
+        <div class="md:w-1/2 p-6">
+            <img alt="Illustration of people working together" class="w-full max-w-lg mx-auto" height="400"
+                src="./TaeAugust07-removebg-preview.png" width="600" />
+        </div>
+    </section>
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Biography</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-6">
+                    <h3 class="text-xl font-bold mb-4">Who We Are</h3>
+                    <p class="text-gray-600 mb-4">Lorem Media is a full-service social media agency. We offer businesses
+                        innovative solutions that deliver the right type of audience to you in the most effective strategies
+                        possible. We strive to develop a community around your business, polishing your branding, and improving
+                        your public relations. Social Media is now one of the most powerful marketing tools with the ability to
+                        communicate with a target audience in real time.</p>
+                    <p class="text-gray-600 mb-4">It's 2019: time to sink or swim.</p>
+                    <p class="text-gray-600 mb-4">We are your Social Media Marketing Agency.</p>
+                    <p class="text-gray-600 mb-4">Lorem Media is a full-service social media agency. We offer businesses
+                        innovative solutions that deliver the right type of audience to you in the most effective strategies
+                        possible. We strive to develop a community around your business, polishing your branding, and improving
+                        your public relations. Social Media is now one of the most powerful marketing tools with the ability to
+                        communicate with a target audience in real time.</p>
+                    <p class="text-gray-600 mb-4">It's 2019: time to sink or swim.</p>
+                    <p class="text-gray-600 mb-4">We are your Social Media Marketing Agency.</p>
+                </div>
+                <div class="md:w-1/2 p-6">
+                    <img alt="Illustration of people communicating" class="w-full max-w-lg mx-auto mt-8 md:mt-0" height="400"
+                        src="./image-removebg-preview.png" width="600" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-100 py-10">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between">
+            <div class="flex items-center mb-6 md:mb-0">
+                <img alt="RK Hospital Logo" class="h-10 w-10" height="50"
+                    src="./logo hospital.png" width="50" />
+                <span class="ml-3 text-xl font-bold">RK Hospital</span>
+            </div>
+            <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-20">
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-600 hover:text-black" href="#">Home</a></li>
+                        <li><a class="text-gray-600 hover:text-black" href="#">Appointment</a></li>
+                        <li><a class="text-gray-600 hover:text-black" href="#">Service</a></li>
+                        <li><a class="text-gray-600 hover:text-black" href="#">About Us</a></li>
+                        <li><a class="text-gray-600 hover:text-black" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Hours</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-600">Monday: 9:00 - 18:00</li>
+                        <li class="text-gray-600">Tuesday: 9:00 - 18:00</li>
+                        <li class="text-gray-600">Wednesday: 9:00 - 18:00</li>
+                        <li class="text-gray-600">Thursday: 9:00 - 18:00</li>
+                        <li class="text-gray-600">Friday: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-600"><i class="fas fa-phone-alt mr-2"></i>000-000-000</li>
+                        <li class="text-gray-600"><i class="fas fa-envelope mr-2"></i>info@email.com</li>
+                        <li class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>Kalutara South</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

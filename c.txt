@@ -1,0 +1,561 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        RK Hospitals Dashboard
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/5 bg-gradient-to-b from-purple-500 to-indigo-500 text-white min-h-screen p-4">
+            <div class="flex items-center justify-between mb-6">
+                <i class="fas fa-bars text-2xl">
+                </i>
+                <i class="fas fa-arrow-left text-2xl">
+                </i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="mb-4">
+                        <a class="flex items-center" href="b.html">
+                            <i class="fas fa-home mr-2">
+                            </i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="flex items-center" href="a.html">
+                            <i class="fas fa-calendar-alt mr-2">
+                            </i>
+                            Appointments
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="flex items-center" href="medications.html">
+                            <i class="fas fa-pills mr-2">
+                            </i>
+                            Medications
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a style="color: black;" class="flex items-center" href="c.html">
+                            <i class="fas fa-file-alt mr-2">
+                            </i>
+                            Records
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="flex items-center" href="contact.html">
+                            <i class="fas fa-bell mr-2">
+                            </i>
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="w-4/5 p-6">
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center">
+                    <img alt="Hospital Logo" class="mr-4" height="50"
+                        src="./logo hospital.png"
+                        width="50" />
+                    <h1 class="text-2xl font-bold">
+                        RK Hospitals
+                    </h1>
+                </div>
+                <!-- <div class="flex items-center">
+                    <span class="mr-4">
+                        Prasad
+                    </span>
+                    <img alt="User Avatar" class="rounded-full" height="50"
+                        src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-IkQBB8SgOA6Nt20tffuyUxmJ.png?st=2024-09-18T03%3A18%3A14Z&amp;se=2024-09-18T05%3A18%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-17T23%3A47%3A22Z&amp;ske=2024-09-18T23%3A47%3A22Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=YyQA69zxR/Ihtrp98TlMkU4ZmcigkzoIXGn1%2BJQih/0%3D"
+                        width="50" />
+                </div> -->
+            </div>
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-lg font-semibold">
+                                Total Patient
+                            </h2>
+                            <p class="text-2xl font-bold">
+                                20
+                            </p>
+                        </div>
+                        <i class="fas fa-user-injured text-3xl">
+                        </i>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-lg font-semibold">
+                                Total Doctors
+                            </h2>
+                            <p class="text-2xl font-bold">
+                                20
+                            </p>
+                        </div>
+                        <i class="fas fa-user-md text-3xl">
+                        </i>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-lg font-semibold">
+                                Total Wards
+                            </h2>
+                            <p class="text-2xl font-bold">
+                                20
+                            </p>
+                        </div>
+                        <i class="fas fa-procedures text-3xl">
+                        </i>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-lg font-semibold">
+                                Total Labs
+                            </h2>
+                            <p class="text-2xl font-bold">
+                                20
+                            </p>
+                        </div>
+                        <i class="fas fa-flask text-3xl">
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mb-6">
+                <div class="col-span-2 bg-white p-4 rounded-lg shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-lg font-semibold">
+                            patients
+                        </h2>
+                        <div class="flex items-center">
+                            <span class="mr-2">
+                                7 days
+                            </span>
+                            <i class="fas fa-calendar-alt">
+                            </i>
+                        </div>
+                    </div>
+                    <img alt="Graph showing patient data" height="300"
+                        src="./paient.JPG"
+                        width="600" />
+                    <div class="flex justify-between mt-4">
+                        <div>
+                            <p>
+                                All time
+                            </p>
+                            <p class="text-xl font-bold">
+                                41 234
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                30 days
+                            </p>
+                            <p class="text-xl font-bold">
+                                41 234
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                7 days
+                            </p>
+                            <p class="text-xl font-bold">
+                                41 234
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-lg font-semibold">
+                            Appointments
+                        </h2>
+                        <div class="flex items-center">
+                            <button class="bg-red-500 text-white px-2 py-1 rounded mr-2">
+                                Reject
+                            </button>
+                            <button class="bg-green-500 text-white px-2 py-1 rounded">
+                                Accept
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-y-auto h-64">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <p>
+                                    Chance Vaccaro
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    10.01.2003 12:54
+                                </p>
+                            </div>
+                            <span class="text-yellow-500">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <p>
+                                    Desiree Kenter
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    04.12.2003 03:21
+                                </p>
+                            </div>
+                            <span class="text-red-500">
+                                Rejected
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <p>
+                                    Paityn Lubin
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    10.01.2003 12:54
+                                </p>
+                            </div>
+                            <span class="text-yellow-500">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <p>
+                                    Phillip Bator
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    04.12.2003 03:21
+                                </p>
+                            </div>
+                            <span class="text-yellow-500">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <p>
+                                    Emerson Stanton
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    10.01.2003 12:54
+                                </p>
+                            </div>
+                            <span class="text-green-500">
+                                Accept
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <p>
+                                    Alfredo Riehl Madsen
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    03.08.2019 12:54
+                                </p>
+                            </div>
+                            <span class="text-red-500">
+                                Rejected
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <button class="px-3 py-1 border rounded">
+                            1
+                        </button>
+                        <button class="px-3 py-1 border rounded">
+                            2
+                        </button>
+                        <button class="px-3 py-1 border rounded">
+                            3
+                        </button>
+                        <button class="px-3 py-1 border rounded">
+                            ...
+                        </button>
+                        <button class="px-3 py-1 border rounded">
+                            13
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow mb-6">
+                <h2 class="text-lg font-semibold mb-4">
+                    Recent Doctors
+                </h2>
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="py-2">
+                                ID
+                            </th>
+                            <th class="py-2">
+                                Name
+                            </th>
+                            <th class="py-2">
+                                Mobile
+                            </th>
+                            <th class="py-2">
+                                Address
+                            </th>
+                            <th class="py-2">
+                                Consultancy Charge
+                            </th>
+                            <th class="py-2">
+                                Education
+                            </th>
+                            <th class="py-2">
+                                DOB
+                            </th>
+                            <th class="py-2">
+                                Status
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">
+                                1
+                            </td>
+                            <td class="py-2">
+                                Sam
+                            </td>
+                            <td class="py-2">
+                                0785553321
+                            </td>
+                            <td class="py-2">
+                                Kalutara
+                            </td>
+                            <td class="py-2">
+                                2500.00
+                            </td>
+                            <td class="py-2">
+                                MBBS
+                            </td>
+                            <td class="py-2">
+                                1956-04-13
+                            </td>
+                            <td class="py-2 text-green-500">
+                                Online
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">
+                                2
+                            </td>
+                            <td class="py-2">
+                                John
+                            </td>
+                            <td class="py-2">
+                                0742758390
+                            </td>
+                            <td class="py-2">
+                                Kandy
+                            </td>
+                            <td class="py-2">
+                                2500.00
+                            </td>
+                            <td class="py-2">
+                                Phd
+                            </td>
+                            <td class="py-2">
+                                1978-05-13
+                            </td>
+                            <td class="py-2 text-red-500">
+                                Offline
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">
+                                3
+                            </td>
+                            <td class="py-2">
+                                David
+                            </td>
+                            <td class="py-2">
+                                0746482439
+                            </td>
+                            <td class="py-2">
+                                Galle
+                            </td>
+                            <td class="py-2">
+                                2500.00
+                            </td>
+                            <td class="py-2">
+                                MBBS
+                            </td>
+                            <td class="py-2">
+                                1987-04-18
+                            </td>
+                            <td class="py-2 text-red-500">
+                                Offline
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">
+                                4
+                            </td>
+                            <td class="py-2">
+                                Christiano
+                            </td>
+                            <td class="py-2">
+                                0746787870
+                            </td>
+                            <td class="py-2">
+                                Matara
+                            </td>
+                            <td class="py-2">
+                                2500.00
+                            </td>
+                            <td class="py-2">
+                                MBBS
+                            </td>
+                            <td class="py-2">
+                                1969-06-13
+                            </td>
+                            <td class="py-2 text-red-500">
+                                Offline
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h2 class="text-lg font-semibold mb-4">
+                    Out of Stock
+                </h2>
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="py-2">
+                                ID
+                            </th>
+                            <th class="py-2">
+                                Drug Name
+                            </th>
+                            <th class="py-2">
+                                Expire Date
+                            </th>
+                            <th class="py-2">
+                                Manufacture Date
+                            </th>
+                            <th class="py-2">
+                                Price
+                            </th>
+                            <th class="py-2">
+                                QTY
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">
+                                1
+                            </td>
+                            <td class="py-2">
+                                Vitamin C
+                            </td>
+                            <td class="py-2">
+                                2025-01-13
+                            </td>
+                            <td class="py-2">
+                                2021-11-13
+                            </td>
+                            <td class="py-2">
+                                1500.00
+                            </td>
+                            <td class="py-2">
+                                150
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">
+                                2
+                            </td>
+                            <td class="py-2">
+                                Paracetamol
+                            </td>
+                            <td class="py-2">
+                                2025-09-13
+                            </td>
+                            <td class="py-2">
+                                2022-04-04
+                            </td>
+                            <td class="py-2">
+                                4500.00
+                            </td>
+                            <td class="py-2">
+                                225
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">
+                                3
+                            </td>
+                            <td class="py-2">
+                                Actos
+                            </td>
+                            <td class="py-2">
+                                2026-01-16
+                            </td>
+                            <td class="py-2">
+                                2020-06-08
+                            </td>
+                            <td class="py-2">
+                                5000.00
+                            </td>
+                            <td class="py-2">
+                                65
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">
+                                4
+                            </td>
+                            <td class="py-2">
+                                Amoxicillin
+                            </td>
+                            <td class="py-2">
+                                2024-12-13
+                            </td>
+                            <td class="py-2">
+                                2021-01-13
+                            </td>
+                            <td class="py-2">
+                                1200.00
+                            </td>
+                            <td class="py-2">
+                                275
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

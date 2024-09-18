@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header .user {
+            display: flex;
+            align-items: center;
+        }
+        .header .user img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .form-group input, .form-group select, .form-group button {
+            flex: 1;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+        }
+        .form-group button.update {
+            background-color: #007BFF;
+        }
+        .form-group button.delete {
+            background-color: #FF0000;
+        }
+        .recent-appointments {
+            margin-top: 20px;
+        }
+        .recent-appointments table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .recent-appointments table, .recent-appointments th, .recent-appointments td {
+            border: 1px solid #ddd;
+        }
+        .recent-appointments th, .recent-appointments td {
+            padding: 10px;
+            text-align: left;
+        }
+        .recent-appointments th {
+            background-color: #f2f2f2;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+        }
+        .status.online {
+            color: green;
+        }
+        .status.offline {
+            color: red;
+        }
+
+        .d{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><header class="flex justify-between items-center p-6 bg-white shadow-md">
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; text-align: right;" class="flex items-center">
+            <img alt="RK Hospital Logo" class="h-10 w-10" height="50"
+                src="./logo hospital.png"
+                width="50" />
+            <span class="ml-3 text-xl font-bold">RK Hospital</span>
+        
+        <nav style="display: flex; flex-direction: row; gap: 2rem; text-align: right; text-decoration: none;" class="space-x-6">
+            <a style="text-decoration: none; color: rgb(181, 79, 79);" class="text-gray-600 hover:text-black" href="b.html">Home</a>
+            <a style="text-decoration: none; color: black;" class="text-gray-600 hover:text-black" href="a.html">Appointments</a>
+            <a style="text-decoration: none; color: rgb(175, 85, 85);" class="text-gray-600 hover:text-black" href="medications.html">Medications</a>
+            <a style="text-decoration: none; color: rgb(170, 91, 91);" class="text-gray-600 hover:text-black" href="contact.html">Contact Us</a></div>
+        </nav>
+    </header>
+        
+        <h2>Appointment Management</h2>
+        <div class="form-group">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Mobile Number">
+            <input type="text" placeholder="NIC">
+            <input type="date" placeholder="Date of Birth">
+            <select>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="date" placeholder="Appointment Date">
+            <input type="time" placeholder="Appointment Time">
+            <input type="text" placeholder="Department Name">
+            <input type="text" placeholder="Doctor Name">
+            <input type="text" placeholder="Address">
+            <button class="register">Register</button>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+        </div>
+        <div class="recent-appointments">
+            <h3>Recent Appointments</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>NIC</th>
+                        <th>DOB</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Vikram</td>
+                        <td>Doctor</td>
+                        <td>Male</td>
+                        <td>Vikram@gmail.com</td>
+                        <td>078-6622616</td>
+                        <td>86262626</td>
+                        <td>1999-04-13</td>
+                        <td class="status online">Online</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mugilesh</td>
+                        <td>Doctor</td>
+                        <td>Male</td>
+                        <td>Mugilesh@gmail.com</td>
+                        <td>078-6622616</td>
+                        <td>16161616</td>
+                        <td>1999-04-13</td>
+                        <td class="status online">Online</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Lokranjan</td>
+                        <td>Doctor</td>
+                        <td>Male</td>
+                        <td>Lokranjan@gmail.com</td>
+                        <td>078-6622616</td>
+                        <td>16161616</td>
+                        <td>1999-04-13</td>
+                        <td class="status online">Online</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>RK Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+        }
+        nav a{
+            border-bottom: 2px solid transparent;
+            transition: all 1s;
+        }
+
+        nav a:hover{
+            border-bottom: 2px solid blue;
+        }
+    </style>
+    
+</head>
+<body class="bg-white text-gray-800">
+    <header class="flex justify-between items-center p-6">
+        <div class="flex items-center">
+            <img alt="Hospital Logo" class="h-10 w-10" height="50" src="./logo hospital.png" width="50"/>
+            <span class="ml-3 text-xl font-bold">RK Hospital</span>
+            <nav style="margin-left: 400px;" class="space-x-6">
+                <a class="text-gray-600 hover:text-black" href="b.html">Home</a>
+                
+                <a class="text-gray-600 hover:text-black" href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg">Sign In</button>
+    </header>
+    <main class="flex flex-col items-center mt-10">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">We help people to get appointment in online</h1>
+        </div>
+        <div class="mt-10 w-full max-w-4xl p-8 bg-white shadow-lg rounded-lg">
+            <h2 class="text-3xl font-bold mb-4">Sign In</h2>
+            <p class="text-gray-600 mb-6">Please Sign In To Continue</p>
+            <form class="space-y-4">
+                <input class="w-full p-4 border rounded-lg" placeholder="Email" type="email"/>
+                <input class="w-full p-4 border rounded-lg" placeholder="Password" type="password"/>
+                <div style="margin-top: 30px;"><a href="a.html" style="width: 100px" class="w-full bg-gradient-to-r from-green-200 to-blue-200 text-green-800 font-bold ">Sign In</a></div>
+            </form>
+        </div>
+    </main>
+    <footer class="mt-16 bg-gray-100 py-8">
+        <div class="container mx-auto flex justify-between">
+            <div class="flex items-center">
+                <img alt="Hospital Logo" class="h-10 w-10" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-yoqRuD5FZrdWQDRshLAnlCr3.png?st=2024-09-18T03%3A45%3A21Z&se=2024-09-18T05%3A45%3A21Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-09-18T00%3A22%3A45Z&ske=2024-09-19T00%3A22%3A45Z&sks=b&skv=2024-08-04&sig=UIZ5gT%2BPM6FTS6c/It8%2B79LY5TXiVKuSrRQRFZmAz0g%3D" width="50"/>
+                <span class="ml-3 text-xl font-bold">RK Hospital</span>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">Quick Links</h3>
+                <a class="text-gray-600 hover:text-gray-800" href="#">Home</a>
+                <a class="text-gray-600 hover:text-gray-800" href="#">Appointment</a>
+                <a class="text-gray-600 hover:text-gray-800" href="#">Service</a>
+                <a class="text-gray-600 hover:text-gray-800" href="#">About Us</a>
+                <a class="text-gray-600 hover:text-gray-800" href="#">Contact Us</a>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">Hours</h3>
+                <p class="text-gray-600">Monday: 9:00 - 18:00</p>
+                <p class="text-gray-600">Tuesday: 9:00 - 18:00</p>
+                <p class="text-gray-600">Wednesday: 9:00 - 18:00</p>
+                <p class="text-gray-600">Thursday: 9:00 - 18:00</p>
+                <p class="text-gray-600">Friday: 9:00 - 18:00</p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">Contact</h3>
+                <p class="text-gray-600"><i class="fas fa-phone-alt"></i> 000-000-000</p>
+                <p class="text-gray-600"><i class="fas fa-envelope"></i> info@gmail.com</p>
+                <p class="text-gray-600"><i class="fas fa-map-marker-alt"></i> Kolkata South</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
